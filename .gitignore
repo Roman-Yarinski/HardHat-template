@@ -1,0 +1,19 @@
+# Hardhat files
+cache
+artifacts
+typechain
+typechain-types
+
+# Tests
+coverage
+coverage.json
+
+# Lib
+node_modules
+
+# IDE
+.vscode
+.DS_Store
+
+# Package manager
+yarn-error.log
