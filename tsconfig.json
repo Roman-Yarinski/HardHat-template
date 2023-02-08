@@ -27,6 +27,7 @@
     "baseUrl": ".",
     "paths": {
       "@contracts": ["./types/typechain-types"],
+      "@contracts/*": ["./types/typechain-types/contracts/*"],
       "@utils": ["utils/index.ts"],
       "@test-utils": ["test/utils"]
     }

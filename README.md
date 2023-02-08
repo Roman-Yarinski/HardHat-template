@@ -1,3 +1,5 @@
+# Hardhat default wrapper
+
 # < Project Name > smart contracts
 
 This repo will have a code of < Project Name > Smart Contracts.
@@ -5,19 +7,33 @@ This repo will have a code of < Project Name > Smart Contracts.
 ## Deployment config
 
 ```
+{
   "INFURA_KEY": "",
-  "PRIVATE_KEY": "",
+  "DEPLOYER_KEY": "",
   "ETHERSCAN_API_KEY": "",
   "POLYGONSCAN_API_KEY": "",
   "BSCSCAN_API_KEY": "",
   "GAS_PRICE": "",
+  "NODE": {
+    "GAS_PRICE": "auto",
+    "LOGGING": true,
+    "FORK": {
+      "FORK_PROVIDER_URI": "",
+      "FORK_ENABLED": false
+    }
+  },
   "GAS_REPORTER": {
     "ENABLED": false,
     "COINMARKETCAP": "",
     "CURRENCY": "USD",
     "TOKEN": "ETH",
     "GAS_PRICE_API": "https://api.etherscan.io/api?module=proxy&action=eth_gasPrice"
+  },
+  "DEPLOY": {},
+  "SCRIPTS": {
+    "OPERATOR_KEY": ""
   }
+}
 ```
 
 ## Setting project
@@ -64,6 +80,20 @@ yarn test
 
 # Run test watcher
 yarn test:watch
+```
+
+---
+
+### Node hardhat(Localfork)
+
+NOTE:// To work with a node or fork, you need to run the node in a separate console
+
+```sh
+# Run Node hardhat (For run localfork setting config { FORK_ENABLED: true, FORK_PROVIDER_URI: "https://...."})
+yarn node
+
+# Run test watcher
+yarn test:node
 ```
 
 ---
