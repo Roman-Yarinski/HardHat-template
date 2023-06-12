@@ -1,40 +1,47 @@
-# Hardhat default wrapper
+# Hardhat template, default wrapper
 
-# < Project Name > smart contracts
+<!-- Remove after repository creation from hire! -->
+
+## The template supports:
+
+- TypeScrip;
+- JavaScript;
+- TypeChain;
+- SolHint;
+- Prettier;
+- SolCover;
+- Eslint;
+- **CleanDeployments**;
+- **VerifyByName**;
+
+## Advantages of this HardHat template:
+
+1. **Convenient configuration** of your variables for different networks.
+2. Deployment of contracts with **type support**.
+3. Verification of contracts in a convenient way through the **Contract Name**.
+4. Configuring Solidity + TypeScript **Linters** and **Validators**.
+5. Pre-set **most popular networks**.
+6. Convenient prepared folder and file structure.
+7. **Additional Utils** for testing and interacting with smart contracts.
+8. An easy-to-use task to **clean up deployments**.
+9. Convenient and flexible configuration of **logs**, **forks** and **gas reports**.
+10. **Typed NamedAccounts** from convenient interaction.
+
+## Author part:
+
+For more convenient use, you can **fork this repository for yourself and make it your personal template**.
+
+As an author, I will be very pleased that my build was able to improve your experience in developing **amazing** decentralized applications.
+
+### :star2: Also, I will not give up stars on this and my other repositories :star2:
+
+:exclamation: Send me your comments and suggestions. :exclamation:
+
+<!-- Remove after repository creation to hire! -->
+
+## < Project Name > smart contracts
 
 This repo will have a code of < Project Name > Smart Contracts.
-
-## Deployment config
-
-```
-{
-  "INFURA_KEY": "",
-  "DEPLOYER_KEY": "",
-  "ETHERSCAN_API_KEY": "",
-  "POLYGONSCAN_API_KEY": "",
-  "BSCSCAN_API_KEY": "",
-  "GAS_PRICE": "",
-  "NODE": {
-    "GAS_PRICE": "auto",
-    "LOGGING": true,
-    "FORK": {
-      "FORK_PROVIDER_URI": "",
-      "FORK_ENABLED": false
-    }
-  },
-  "GAS_REPORTER": {
-    "ENABLED": false,
-    "COINMARKETCAP": "",
-    "CURRENCY": "USD",
-    "TOKEN": "ETH",
-    "GAS_PRICE_API": "https://api.etherscan.io/api?module=proxy&action=eth_gasPrice"
-  },
-  "DEPLOY": {},
-  "SCRIPTS": {
-    "OPERATOR_KEY": ""
-  }
-}
-```
 
 ## Setting project
 
@@ -166,4 +173,33 @@ To exclude warnings in subsequent audits, use :
 
 ```sh
 slither . --triage
+```
+
+## Deployment config
+
+```
+{
+  "INFURA_KEY": "",
+  "DEPLOYER_KEY": "",
+  "ETHERSCAN_API_KEY": "",
+  "POLYGONSCAN_API_KEY": "",
+  "BSCSCAN_API_KEY": "",
+  "GAS_PRICE": "",
+  "NODE": {
+    "GAS_PRICE": "auto",
+    "LOGGING": true,
+    "FORK": {
+      "FORK_PROVIDER_URI": "",
+      "FORK_ENABLED": false
+    }
+  },
+  "GAS_REPORTER": {
+    "ENABLED": false,
+    "COINMARKETCAP": "",
+    "CURRENCY": "USD",
+    "TOKEN": "ETH",
+    "GAS_PRICE_API": "https://api.etherscan.io/api?module=proxy&action=eth_gasPrice"
+  },
+  "DEPLOY": {}
+}
 ```

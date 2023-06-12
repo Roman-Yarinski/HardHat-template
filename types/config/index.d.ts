@@ -27,11 +27,6 @@ declare module "config" {
   export const NODE: Node;
   export const GAS_REPORTER: GasReporter;
   export const DEPLOY: Deploy;
-  export const SCRIPTS: Scripts;
 
   export interface Deploy {}
-
-  export interface Scripts {
-    OPERATOR_KEY: string;
-  }
 }

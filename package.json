@@ -2,7 +2,7 @@
   "name": "hardhat_default_wrapper",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Pixelplex inc.",
+  "author": "RY",
   "scripts": {
     "clean": "hardhat clean",
     "clean:deployments": "hardhat clean-deployments",
@@ -70,6 +70,7 @@
     "solhint": "^3.3.7",
     "solhint-plugin-prettier": "^0.0.5",
     "solidity-coverage": "^0.8.2",
+    "solidity-docgen": "^0.6.0-beta.35",
     "ts-node": ">=8.0.0",
     "tsconfig-paths": "^4.1.1",
     "typechain": "^8.1.0",

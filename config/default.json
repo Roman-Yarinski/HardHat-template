@@ -7,7 +7,7 @@
   "GAS_PRICE": 28,
   "NODE": {
     "GAS_PRICE": "auto",
-    "LOGGING": true,
+    "LOGGING": false,
     "FORK": {
       "FORK_PROVIDER_URI": "",
       "FORK_ENABLED": false
@@ -20,8 +20,5 @@
     "TOKEN": "ETH",
     "GAS_PRICE_API": "https://api.etherscan.io/api?module=proxy&action=eth_gasPrice"
   },
-  "DEPLOY": {},
-  "SCRIPTS": {
-    "OPERATOR_KEY": "0123456789363552ea583b7ce9ab23d230f65d39e6d4d4898e841f0f304372ea"
-  }
+  "DEPLOY": {}
 }
