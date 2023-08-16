@@ -16,4 +16,8 @@ node_modules
 .DS_Store
 
 # Package manager
-yarn-error.log
+package-error.log
+
+# Ignore all .env files except .env.example
+.env*
+!.env.example
